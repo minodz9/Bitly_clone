@@ -9,8 +9,8 @@ if (isset($_GET['q'])) {
     $bdd = new PDO('mysql:host=localhost; dbname=bitly; charset=utf8', 'root', '');
 
     $requete = $bdd->prepare('SELECT count(*) AS x
-                                  FROM links
-                                  WHERE shortcut=? ');
+                              FROM links
+                              WHERE shortcut=? ');
 
     $requete->execute(array($shortcut));
 
