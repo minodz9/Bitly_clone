@@ -161,7 +161,7 @@ if (isset($_POST['url'])) {
                     <div id="result">
 
                         <b> URL RACCOURCIE : </b>
-                        <a style="font-weight:100" href="http://localhost/udemy_php/ProjetUrl/?q=<?php echo htmlspecialchars($_GET['short']) ?>">http://localhost/udemy_php/ProjetUrl/?q=<?php echo htmlspecialchars($_GET['short']) ?></a>
+                        <a style="font-weight:100" href="http://localhost/Bitly_clone/?q=<?php echo htmlspecialchars($_GET['short']) ?>">http://localhost/Bitly_clone/?q=<?php echo htmlspecialchars($_GET['short']) ?></a>
 
                     </div>
                 </div>
