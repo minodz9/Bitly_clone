@@ -6,7 +6,7 @@ if (isset($_GET['q'])) {
 
     $shortcut = htmlspecialchars($_GET['q']);
 
-    $bdd = new PDO('mysql:host=localhost; dbname=bitly; charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost; dbname=bitly; charset=utf8', 'root', 'root');
 
     $requete = $bdd->prepare('SELECT count(*) AS x
                               FROM links
@@ -42,7 +42,7 @@ if (isset($_GET['q'])) {
 
 try {
 
-    $bdd = new PDO('mysql:host=localhost; dbname=bitly; charset=utf8', 'root', '')
+    $bdd = new PDO('mysql:host=localhost; dbname=bitly; charset=utf8', 'root', 'root')
         or die(print_r($bdd->errorInfo()));
 } catch (Exception $e) {
 
